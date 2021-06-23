@@ -1,21 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FORMLAR</title>
+
+    <style>
+        #meyve{
+            border: 2px solid peru;
+            width: 350px;
+            height: 120px;
+        }
+        #şeker{
+            border: 2px solid blueviolet;
+            width: 350px;
+            height: 130px;
+        }
+        #ta1{
+            border: 2px solid brown;
+        }
+        #isim{
+            border: 2px solid crimson;
+            width: 350px;
+        }
+        #soyisim{
+            border: 2px solid crimson;
+            width: 350px;
+        }
+        #şifre{
+            border: 2px solid aqua;
+            width: 350px;
+        }
+        #gen{
+            border: 2px solid chartreuse;
+        }
+        #age{
+            border: 2px solid darkgreen;
+            width: 310px;
+        }
+        #panda{
+            border: 2px solid chartreuse;
+        }
+        #search{
+            border: 2px solid navy;
+            width: 315px;
+        }
+        #renk{
+            border: 2px solid fuchsia;
+            width: 260px;
+        }
+        #tarih{
+            border: 2px solid maroon;
+            width: 195px;
+        }
+        #mail{
+            border: 2px solid lawngreen;
+            width: 300px;
+        }
+        #dosya{
+            border: 2px solid tomato;
+            width: 255px;
+        }
+        #telno{
+            border: 2px solid red;
+            width: 345px;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Lorem ipsum dolor sit amet.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quam praesentium reprehenderit ipsam magni
-        laudantium, est unde natus aliquam magnam quae velit, ipsum sunt quod.</p>
-    <h2>Lorem ipsum dolor sit amet.</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus labore, totam ipsam in voluptates minus
-        officiis exercitationem. Mollitia, obcaecati magnam!</p>
-</body>
 
+    <form action="result.html" method="GET" >
+
+<div>
+
+        <label for="isim">AD:</label><br>
+        <input id="isim" type="text" name="isim" placeholder="Buraya Ad Giriniz"><br>
+        <br>
+        <label for="soyisim">SOYAD:</label><br>
+        <input id="soyisim" type="text" name="soyisim" placeholder="Buraya Soyad Giriniz">
+</div>
+<br>
+
+<div>
+    <label for="şifre">PAROLA:</label><br>
+    <input type="password" name="parola" id="şifre" placeholder="Buraya Şifre Giriniz">
+</div>
+<br>
+
+<div>
+    <label for="gen">CİNSİYET:</label>
+    <input id="gender1" type="radio" name="gender" value="BAY" >
+    <label for="gender1">BAY</label>
+    <input id="gender2" type="radio" name="gender" value="BAYAN" >
+    <label for="gender2">BAYAN</label>
+
+</div>
+<br>
+
+<div>
+    <label for="age">YAŞ:</label>
+    <input id="age" type="number" name="yaş" placeholder="Buraya Yaşınızı Giriniz" step="1" min="16" max="61">
+</div>
+<br>
+
+<div>
+
+    <label>FAVORİ HAYVAN BELİRTİNİZ:</label><br><br>
+
+    <input type="checkbox" name="animal_1" id="panda" value="panda">
+    <label for="panda">PANDA</label>
+    <input type="checkbox" name="animal_2" id="balık" value="balık">
+    <label for="balık">BALIK</label>
+    <input type="checkbox" name="animal_3" id="martı" value="martı">
+    <label for="martı">MARTI</label>
+
+</div>
+<br><br>
+
+<div>
+    <label for="search">ARA:</label>
+    <input type="search" name="arandı" id="search" placeholder="ara.....">
+</div>
+<br><br>
+
+<div>
+    <label for="renk">RENK SEÇ:</label>
+    <input type="color" name="seçilen renk" id="renk">
+</div>
+<br><br>
+
+<div>
+    <label for="tarih">BİR TARİH SEÇİNİZ:</label>
+    <input type="date" name="seçilen tarih" id="tarih" min="1999-12-31" max="2999-12-31" value="">
+</div>
+<br><br>
+
+<div>
+    <label for="mail">MAİL:</label>
+    <input type="email" name="kullanıcı emaili" id="mail" placeholder="Buraya Mail Adresinizi Giriniz">
+</div>
+<br><br>
+
+<div>
+    <label for="dosya">DOSYA SEÇ:</label>
+    <input type="file" name="Kullanıcının Dosyası" id="dosya">
+</div>
+<br>
+
+<div>
+    <label for="telno">TELEFON NUMARASI:</label><br>
+    <input type="tel" name="Telefon Numarası" id="telno" placeholder="Buraya Tel.No Giriniz" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+</div>
+<br>
+
+<div>
+    <label for="meyve">HANGİ MEYVEYİ SEVERSİNİZ:</label>
+    <br>
+    <select name="Meyve" id="meyve" multiple size="6" required>
+        <option>-Bir Meyve Seç-</option>
+        <option value="Kiraz">KİRAZ</option>
+        <option value="Çilek">ÇİLEK</option>
+        <option value="Vişne">VİŞNE</option>
+        <option selected value="Elma">ELMA</option>
+        <option value="Nar">NAR</option>
+
+    </select>
+</div>
+<br>
+
+<div>
+    <label for="şeker">HANGİ TATLIYI SEVERSİNİZ:</label>
+    <br>
+    <select name="Tatlı" id="şeker" multiple size="7" required>
+        <optgroup label="Sütlü Tatlılar">
+            <option value="sütlaç">SÜTLAÇ</option>
+            <option value="Keşkül">KEŞKÜL</option>
+            <option value="Kazandibi">KAZANDİBİ</option>
+        </optgroup>
+        <optgroup label="Şerbetli Tatlılar">
+            <option selected value="Baklava">BAKLAVA</option>
+            <option value="Künefe">KÜNEFE</option>
+        </optgroup>
+    </select>
+</div>
+<br>
+
+<div>
+    <label for="ta1">BURAYA YORUMUNUZU YAZINIZ:</label>
+    <br>
+    <textarea name="yorum" id="ta1" cols="47" rows="8" style="resize: none;" placeholder="Yorum Lütfen..."></textarea>
+</div>
+
+<br><br><br><br><br>
+        <input type="reset" value="reset">
+        <input type="submit" >
+    </form>
+</body>
 </html>
